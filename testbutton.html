@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: green;
+}
+
+#button {
+  background-color: green;
+  border: 70px solid green;
+  border-radius: 50%;
+
+  /*width: 200px;
+  height: 200px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  transition: all 0.2s;
+}
+
+#button:hover {
+  animation: button 0.2s ease-in-out forwards;
+  animation-delay: .09s;
+  border: 70px solid red;
+  transition: all 0.2s;
+  background-color: red;
+}
+
+#button:hover #icon {
+  color: red;
+  background-color: white;
+  transition: all 0.2s;
+}
+
+#icon {
+  font-size: 150px;
+  color: gold;
+  margin: 0;
+  border-radius: 50%;
+  transition: all 0.12s;
+}
+
+@keyframes button {
+  0% {
+    border: 70px solid red;
+    width: 290px;
+    height: 290px;
+    background-color: red;
+    }
+  25% {
+    background-color: white;
+  }
+  100% {
+    border: 15px solid red;
+    width: 290px;
+    height: 290px;
+    background-color: white;
+  }
+}
+
+</style>
+</head>
+<body>
+
+	<div id="button"><span id='icon'class="iconify" data-icon="entypo-social:github-with-circle" data-inline="false"></span></span></span></ion-icon></div>
+
+<script type="text/javascript">
+
+  /*document.querySelector('#button').addEventListener('mouseover', function() {
+    document.querySelector('#button').classList.toggle('.start');
+  })*/
+
+</script>
+<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+</body>
+</html>
